@@ -1,5 +1,7 @@
 ---
-layout: tech-links
+layout: default
+stylesheet: /shinshu-tech-links/assets/site.css
+script: /shinshu-tech-links/assets/directory.js
 title: 信州のIT・デザインイベントとコミュニティ
 description: 北アルプス地域を中心に、信州のIT・Web・デザイン・生成AIのイベントやコミュニティを探せるリンク集です。
 permalink: /shinshu-tech-links/
@@ -16,15 +18,14 @@ regions:
 {% assign directory = site.data.shinshu_tech_links %}
 {% assign checked_dates = directory.communities | concat: directory.events | map: 'checked_on' %}
 {% assign last_updated = checked_dates | push: page.updated_on | sort | last %}
-<section class="hero wrap" aria-labelledby="title">
-  <div class="hero-copy">
-    <h1 id="title"><span>信州のIT・デザイン</span><span>イベントとコミュニティ</span></h1>
-    <p class="updated">最終更新日　<time datetime="{{ last_updated }}">{{ last_updated | date: '%Y年%-m月%-d日' }}</time></p>
-    <p>北アルプスの麓から、安曇野・松本・塩尻、信州各地へ。<br class="desktop-break">IT・Web・デザイン・生成AIを学ぶ場や、いっしょにつくる仲間を探せるリンク集です。</p>
-    <a class="button" href="#directory">地域から探す</a>
-  </div>
-  <img src="{{ '/assets/images/raicho-alps.webp' | relative_url }}" width="1536" height="1024" alt="北アルプスの山並みと岩場に立つ雷鳥" fetchpriority="high">
-</section>
+<header class="guide-heading wrap">
+  <h1>{{ page.title | escape }}</h1>
+  <p class="updated">最終更新日　<time datetime="{{ last_updated }}">{{ last_updated | date: '%Y年%-m月%-d日' }}</time></p>
+  <p>北アルプスの麓から、安曇野・松本・塩尻、信州各地へ。IT・Web・デザイン・生成AIを学ぶ場や、いっしょにつくる仲間を探せます。</p>
+  <nav class="guide-nav" aria-label="このページの目次">
+    <a href="#upcoming">近いうちに開催</a><a href="#directory">地域から探す</a><a href="#contribute">情報提供</a>
+  </nav>
+</header>
 
 <section id="upcoming" class="upcoming" aria-labelledby="upcoming-title">
   <div class="wrap">

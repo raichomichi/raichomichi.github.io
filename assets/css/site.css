@@ -192,7 +192,7 @@ a:hover { color: #587242; }
 
 @media (max-width: 38rem) {
   .masthead-inner { flex-direction: column; align-items: flex-start; gap: .25rem; padding-block: .65rem .35rem; }
-  .main-nav { width: 100%; justify-content: space-between; gap: .4rem; }
+  .main-nav { width: 100%; display: grid; grid-template-columns: auto auto; justify-content: start; justify-items: start; gap: .15rem 1rem; }
   .hero { padding-block: 2.5rem 1.6rem; }
   .hero h1 { margin-bottom: 1rem; }
   .hero-links { gap: .9rem; }
