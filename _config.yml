@@ -1,0 +1,22 @@
+title: 雷鳥の道
+description: 長野県・北アルプス地域を中心に、Webやデジタル技術を使って作り、試し、公開する個人プロジェクトです。
+lang: ja
+url: https://raichomichi.github.io
+baseurl: ""
+theme: null
+organization_url: https://github.com/raichomichi
+contact_url: https://muchuu.net/
+
+navigation:
+  - title: トップ
+    path: /
+  - title: プロジェクト一覧
+    path: /projects/
+  - title: この活動について
+    path: /about/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

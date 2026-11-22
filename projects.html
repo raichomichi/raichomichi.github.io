@@ -1,0 +1,29 @@
+---
+layout: article
+title: プロジェクト一覧
+description: 雷鳥の道で作ったWebサイトやゲーム、ツールを、公開先やソースコードとともに紹介します。
+permalink: /projects/
+---
+{% if site.data.projects.size > 0 %}
+  <ul class="project-list">
+    {% for project in site.data.projects %}
+      <li>
+        <h2>{{ project.name | escape }}</h2>
+        <p>{{ project.description | escape }}</p>
+        <div class="project-links">
+          {% if project.site_url and project.site_url != empty %}
+            <a class="text-link" href="{{ project.site_url | escape }}" aria-label="{{ project.name | escape }}を使ってみる">使ってみる</a>
+          {% endif %}
+          {% if project.repo_url and project.repo_url != empty %}
+            <a class="text-link" href="{{ project.repo_url | escape }}" aria-label="{{ project.name | escape }}のソースコードを見る">ソースコードを見る</a>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <div class="project-note">
+    <p>ここでは、雷鳥の道で作ったものを紹介していきます。公開した作品は、使える場所やソースコードと一緒に掲載します。</p>
+    <a class="text-link" href="{{ site.organization_url }}">GitHubで雷鳥の道を見る</a>
+  </div>
+{% endif %}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% unless page.url == '/' %}{{ page.title | escape }} | {% endunless %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="masthead">
+      <div class="wrap masthead-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <span class="mountain-mark" aria-hidden="true"></span>
+          {{ site.title }}
+        </a>
+        <nav class="main-nav" aria-label="メインナビゲーション">
+          {% for item in site.navigation %}
+            <a href="{{ item.path | relative_url }}"{% if page.url == item.path %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>
+          <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <p>運営　ytsuyuzaki</p>
+        </div>
+        <nav aria-label="関連リンク">
+          <a href="{{ site.organization_url }}">GitHub</a>
+          <a href="{{ site.contact_url }}">運営者・お問い合わせ</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
