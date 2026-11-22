@@ -1,1 +1,4 @@
-[]
+- name: 信州のIT・デザインイベントとコミュニティ
+  description: 北アルプス地域を中心に、信州のIT・Web・デザイン・生成AIのイベントやコミュニティを、地域と分野から探せるリンク集です。
+  site_url: https://raichomichi.github.io/shinshu-tech-links/
+  repo_url: https://github.com/raichomichi/shinshu-tech-links
