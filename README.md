@@ -12,7 +12,9 @@
 
 ## 手元で表示する
 
-Ruby 3.3とBundlerを使います。リポジトリのルートで次のコマンドを実行し、ブラウザで [ローカルプレビュー](http://127.0.0.1:4000/) を開きます。ページ本文や作品データを保存すると再ビルドされます。
+Ruby 3.3とBundlerを使います。[Gemfile](Gemfile) の `github-pages` は[公開環境のバージョン](https://pages.github.com/versions/)に合わせています。Bundlerが生成する `Gemfile.lock` はローカルで管理します。
+
+リポジトリのルートで次のコマンドを実行し、ブラウザで [ローカルプレビュー](http://127.0.0.1:4000/) を開きます。ページ本文や作品データを保存すると再ビルドされます。
 
 ```sh
 bundle config set --local path vendor/bundle
