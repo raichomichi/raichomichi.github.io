@@ -1,0 +1,6 @@
+<ul class="guide-links">
+  {% assign guides = site.pages | where_exp: 'item', 'item.guide_order' | sort: 'guide_order' %}
+  {% for guide in guides %}
+    <li><a href="{{ guide.url | relative_url }}">{{ guide.title | escape }}</a></li>
+  {% endfor %}
+</ul>

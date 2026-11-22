@@ -11,8 +11,8 @@ contact_url: https://muchuu.net/
 navigation:
   - title: トップ
     path: /
-  - title: イベント・コミュニティ
-    path: /shinshu-tech-links/
+  - title: 地域ガイド
+    path: /guides/
   - title: プロジェクト一覧
     path: /projects/
   - title: この活動について
