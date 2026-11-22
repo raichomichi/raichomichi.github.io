@@ -1,0 +1,149 @@
+.regional-guide {
+  max-width: 64rem;
+  padding-block: clamp(2rem, 5vw, 4.5rem);
+}
+.regional-guide [id] { scroll-margin-top: 1rem; }
+.regional-heading { margin-bottom: clamp(1.5rem, 4vw, 3rem); }
+.regional-heading h1 {
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  text-wrap: balance;
+}
+.guide-path, .guide-note, .mountain-figure small {
+  color: var(--moss);
+  font-size: .9rem;
+}
+.guide-path { margin-bottom: .7rem; }
+.guide-intro { max-width: 40em; margin-top: .9rem; }
+.regional-heading-illustrated {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+.regional-heading-illustrated img {
+  width: 100%;
+  max-height: 13rem;
+  object-fit: contain;
+  height: auto;
+}
+.guide-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.6rem;
+  padding: .45rem 1rem;
+  background: var(--mist);
+  border-inline-start: 3px solid var(--moss);
+}
+.guide-jumps a { display: inline-block; padding-block: .45rem; font-weight: 600; }
+.guide-group, .regional-guide > h2 { margin-top: clamp(2rem, 5vw, 3.5rem); }
+.regional-guide h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+.guide-group > h2, .regional-guide > h2 {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--moss);
+}
+.guide-entries, .mountain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(1.5rem, 4vw, 3rem);
+}
+.guide-entries li, .mountain-list li {
+  padding-block: 1.15rem;
+  border-bottom: 1px solid var(--line);
+}
+.guide-entries h3, .bath-detail h3 {
+  margin: 0 0 .45rem;
+  color: var(--pine);
+  line-height: 1.55;
+}
+.guide-entries h3 { font-size: 1.18rem; text-wrap: balance; }
+
+.bath-overview { padding: clamp(1rem, 3.5vw, 2rem); background: var(--mist); }
+.bath-overview > p { margin-top: .6rem; }
+.bath-table {
+  width: 100%;
+  margin-block: 1rem .75rem;
+  background: #fff;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.bath-table th, .bath-table td {
+  padding: .65rem .9rem;
+  text-align: start;
+  border-bottom: 1px solid var(--line);
+}
+.bath-table thead { background: var(--pine); color: #fff; }
+.bath-table thead th { white-space: nowrap; }
+.bath-table small { display: block; color: var(--moss); font-weight: 400; }
+.bath-table td { white-space: nowrap; }
+.bath-detail { max-width: 47rem; padding-block: 1.35rem; }
+.bath-detail + .bath-detail { border-top: 1px solid var(--line); }
+.bath-detail h3 { font: 700 1.45rem/1.45 var(--serif); }
+.bath-detail dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin-block: 1rem;
+  gap: .4rem 1.4rem;
+}
+.bath-detail dt { color: var(--moss); font-weight: 600; }
+.bath-detail dd { margin: 0; }
+.bath-sources {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+  margin-block: .5rem;
+}
+.guide-return { display: inline-block; margin-top: 1rem; }
+
+.mountain-figure {
+  margin: 0 0 1.5rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  background: var(--mist);
+}
+.mountain-photo { position: relative; }
+.mountain-photo img { display: block; width: 100%; height: auto; }
+.summit-label {
+  position: absolute;
+  left: 51%;
+  bottom: 70%;
+  transform: translateX(-50%);
+  padding: .12rem .55rem;
+  margin-bottom: .7rem;
+  color: #fff;
+  background: var(--pine);
+  font-weight: 600;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+.summit-label::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  height: .7rem;
+  border-left: 2px solid var(--pine);
+}
+.mountain-figure figcaption { padding: clamp(.9rem, 3vw, 2rem); }
+.mountain-figure strong, .mountain-list strong { display: block; color: var(--pine); }
+.mountain-figure strong { font: 700 1.35rem/1.5 var(--serif); margin-bottom: .5rem; }
+.mountain-figure small { display: block; margin-top: .6rem; }
+.regional-guide > p { max-width: 46em; margin-top: 1rem; }
+.mountain-list strong { font-size: 1.1rem; margin-bottom: .4rem; }
+
+@media (max-width: 44rem) {
+  .guide-entries, .mountain-list, .mountain-figure { grid-template-columns: 1fr; }
+  .regional-heading-illustrated { grid-template-columns: 1fr; gap: .65rem; }
+  .regional-heading-illustrated img { max-height: 8.5rem; }
+}
+@media (max-width: 35rem) {
+  .bath-overview { padding: .9rem .6rem; }
+  .bath-table { font-size: .94rem; }
+  .bath-table th, .bath-table td { padding: .55rem .3rem; }
+  .bath-detail dl { column-gap: .8rem; }
+}

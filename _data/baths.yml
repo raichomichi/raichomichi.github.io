@@ -1,0 +1,92 @@
+- name: 上原（わっぱら）の湯
+  anchor: 上原わっぱらの湯
+  area: 大町市
+  address: 大町市平1955-446
+  description: 葛温泉から湯を引く、市のコミュニティセンターの日帰り温泉です。
+  fee: 500円
+  general: 中学卒業後〜64歳
+  other_fees: 65歳以上、小中学生、障がい者は各250円。
+  hours: 9:00〜20:00
+  last_entry: "19:30"
+  closed: 第2・第4火曜
+  checked_on: "2026-11-22"
+  links:
+    - {title: 上原の湯の利用案内, url: "https://kita-alps-wappara.com/ご利用案内/"}
+    - {title: 営業のお知らせ, url: "https://kita-alps-wappara.com/"}
+
+- name: やすらぎの郷の一般浴室
+  area: 池田町
+  address: 池田町池田2005-1
+  description: 総合福祉センターの窓口で入浴券を購入できます。ボディーソープは備え付けで、シャンプーやタオルは持参します。
+  fee: 400円
+  general: 中学卒業後〜64歳
+  other_fees: 65歳以上と障害者手帳をお持ちの方は300円、中学生以下は200円、3歳未満は無料。
+  hours: 日・月・祝日は13:00〜20:30、それ以外の日は10:00〜20:30
+  last_entry: "20:00"
+  closed: 町のお風呂営業カレンダーで確認できます。
+  checked_on: "2026-11-22"
+  links:
+    - {title: 池田町のお風呂営業カレンダー・料金, url: "https://www.ikedamachi.net/0000004218.html"}
+    - {title: 総合福祉センターの所在地, url: "https://www.ikedamachi.net/0000000307.html"}
+
+- name: すずむし荘
+  area: 松川村
+  address: 松川村3363-1082
+  description: 馬羅尾山麓の天然ラドン温泉を楽しめる宿です。日帰り入浴は予約不要。JR信濃松川駅からタクシーで約10分です。
+  fee: 600円
+  general: 大人
+  other_fees: 子どもは400円。
+  hours: 10:00〜21:00
+  last_entry: "20:30"
+  closed: 木曜。祝日による振替は施設の営業カレンダーで確認できます。
+  checked_on: "2026-11-22"
+  links:
+    - {title: すずむし荘の日帰り温泉・営業カレンダー, url: "https://suzumushisou.jp/daytrip_onsen.html"}
+    - {title: 交通案内, url: "https://suzumushisou.jp/access.html"}
+
+- name: 八方の湯
+  area: 白馬村
+  address: 白馬村北城5701-2
+  description: 八方温泉街の入口にあり、内湯と露天風呂があります。晴れた日は湯船から白馬三山を望めます。
+  fee: 1,000円
+  general: 中学生以上
+  other_fees: 小学生は600円、3歳〜就学前は400円。
+  hours: 10:00〜21:00
+  last_entry: "20:30"
+  closed: 通年営業（定休日なし）
+  checked_on: "2026-11-22"
+  links:
+    - {title: 八方の湯の施設案内・地図, url: "https://hakuba-happo-onsen.jp/dayuse/#sec01"}
+
+- name: みみずくの湯
+  area: 白馬村
+  address: 白馬村北城八方口5480-1
+  description: JR白馬駅から八方に向かう途中にある温泉です。内湯のほか、八方尾根と白馬三山を眺める露天風呂があります。
+  fee: 800円
+  general: 中学生以上
+  other_fees: 小学生は500円、3歳〜就学前は300円。
+  hours: 10:00〜21:00
+  last_entry: "20:30"
+  closed: 通年営業（定休日なし）
+  checked_on: "2026-11-22"
+  links:
+    - {title: みみずくの湯の施設案内・地図, url: "https://hakuba-happo-onsen.jp/dayuse/#sec02"}
+
+- name: おたりつぐら 公衆浴場
+  anchor: おたりつぐら-公衆浴場
+  area: 小谷村
+  address: 小谷村中小谷丙2958
+  description: 村の複合拠点施設の1階にある沸かし湯の公衆浴場です。村外の方も1回券で入浴できます。
+  fee: 250円
+  general: 一般
+  other_fees: 18歳以下は居住地を問わず150円。小谷村民は65歳以上も150円。
+  hours: 土〜月は11:00〜17:00、火〜金は11:00〜20:00
+  last_entry: |-
+    土〜月 16:00
+    火〜金 19:00
+  closed: 年末年始。祝日や行事による時間変更は施設の営業カレンダーで確認できます。
+  checked_on: "2026-11-22"
+  links:
+    - {title: おたりつぐらの公衆浴場・料金, url: "https://www.otari-kyoten.jp/index3-furo.html"}
+    - {title: 入浴時間（施設パンフレット1ページ左下・PDF）, url: "https://www.otari-kyoten.jp/images/download/pdf/総合パンフ.pdf"}
+    - {title: 最新の営業カレンダー, url: "https://www.otari-kyoten.jp/index.html"}

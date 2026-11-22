@@ -1,0 +1,50 @@
+---
+layout: regional-guide
+title: 北アルプス地域の日帰り温泉と銭湯
+description: 大町市・池田町・松川村・白馬村・小谷村の温泉と公衆浴場を、場所・一般料金・入浴時間・最終受付で比べられます。
+permalink: /hot-springs-and-baths/
+guide_order: 8
+guide_category: 出かける・歩く
+stylesheet: /assets/css/regional-guides.css
+lead: 山から下りた夕方に、もうひと風呂。北アルプスの麓で日帰り入浴ができる温泉と、地元で親しまれる浴場を市町村別にまとめました。
+---
+<section class="bath-overview" id="compare">
+  <h2>料金と最終受付で比べる</h2>
+  <p>施設名から、子ども料金や休館日、公式の営業案内を確認できます。</p>
+  <table class="bath-table" aria-label="日帰り入浴の一般料金と通常の最終受付">
+    <thead><tr><th scope="col">施設・市町村</th><th scope="col">一般料金</th><th scope="col">最終受付</th></tr></thead>
+    <tbody>
+      {% for bath in site.data.baths %}
+        <tr>
+          <th scope="row"><a href="#{{ bath.anchor | default: bath.name | escape }}">{{ bath.name | escape }}</a><small>{{ bath.area }}</small></th>
+          <td>{{ bath.fee }}</td><td>{{ bath.last_entry | escape | newline_to_br }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="guide-note">通常営業日の情報です。祝日・年末年始・点検日の変更は各施設のお知らせをご覧ください。</p>
+</section>
+{% assign areas = site.data.baths | group_by: 'area' %}
+{% for area in areas %}
+  <section class="guide-group" id="{{ area.name }}">
+    <h2>{{ area.name }}</h2>
+    {% for bath in area.items %}
+      <article class="bath-detail" id="{{ bath.anchor | default: bath.name | escape }}">
+        <h3>{{ bath.name | escape }}</h3>
+        <p>{{ bath.description }}</p>
+        <dl>
+          <dt>所在地</dt><dd>{{ bath.address }}</dd>
+          <dt>入浴料</dt><dd>{{ bath.general }} {{ bath.fee }}。{{ bath.other_fees }}</dd>
+          <dt>入浴時間</dt><dd>{{ bath.hours }}</dd>
+          <dt>最終受付</dt><dd>{{ bath.last_entry | escape | newline_to_br }}</dd>
+          <dt>休館日</dt><dd>{{ bath.closed }}</dd>
+        </dl>
+        <ul class="bath-sources">
+          {% for link in bath.links %}<li><a href="{{ link.url | escape }}">{{ link.title | escape }}</a></li>{% endfor %}
+        </ul>
+        <p class="guide-note">公式案内を確認した日　<time datetime="{{ bath.checked_on }}">{{ bath.checked_on | date: '%Y年%-m月%-d日' }}</time></p>
+      </article>
+    {% endfor %}
+  </section>
+{% endfor %}
+<a class="guide-return" href="#compare">料金と最終受付の表に戻る</a>

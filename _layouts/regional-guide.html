@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="wrap regional-guide">
+  <header class="regional-heading{% if page.header_art %} regional-heading-illustrated{% endif %}">
+    <div>
+      {% if page.guide_category %}
+        <p class="guide-path"><a href="{{ '/guides/' | relative_url }}">地域ガイド</a> <span aria-hidden="true">／</span> {{ page.guide_category }}</p>
+      {% endif %}
+      <h1>{{ page.title | escape }}</h1>
+      <p class="guide-intro">{{ page.lead | escape }}</p>
+    </div>
+    {% if page.header_art %}
+      <img src="{{ page.header_art | relative_url }}" width="1536" height="1024" alt="">
+    {% endif %}
+  </header>
+  {{ content }}
+</article>

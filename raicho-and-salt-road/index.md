@@ -4,6 +4,7 @@ title: 雷鳥と塩の道
 description: 北アルプスの雷鳥の暮らしと観察先、糸魚川から松本を結んだ千国街道の牛方宿や塩にまつわる伝承を紹介します。
 permalink: /raicho-and-salt-road/
 guide_order: 4
+guide_category: 自然・歴史を知る
 ---
 ## 山の上で暮らす雷鳥
 

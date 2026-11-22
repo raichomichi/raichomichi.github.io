@@ -1,7 +1,35 @@
 ---
-layout: article
+layout: regional-guide
 title: 地域ガイド
 description: 北アルプス地域と安曇野・松本・塩尻を中心に、仕事や交流の場、歴史、山、温泉を紹介するガイドの一覧です。
 permalink: /guides/
+stylesheet: /assets/css/regional-guides.css
+header_art: /assets/images/raicho-alps.webp
+lead: 信州で仕事をする場所、人と出会う場、歩いて知る土地の歴史。北アルプスの麓を中心に、目的に合わせて探せます。
+group_order: [働く・つながる, 出かける・歩く, 自然・歴史を知る]
 ---
-{% include guide-links.html %}
+{% assign guides = site.pages | where_exp: 'item', 'item.guide_order' | sort: 'guide_order' %}
+{% assign groups = guides | group_by: 'guide_category' %}
+{% assign names = groups | map: 'name' %}
+{% assign ordered_names = page.group_order | concat: names | uniq %}
+<nav class="guide-jumps" aria-label="ガイドの目的別目次">
+  {% for name in ordered_names %}
+    {% if names contains name %}<a href="#group-{{ forloop.index }}">{{ name | default: 'その他のガイド' | escape }}</a>{% endif %}
+  {% endfor %}
+</nav>
+{% for name in ordered_names %}
+  {% assign group = groups | where: 'name', name | first %}
+  {% if group %}
+    <section class="guide-group" id="group-{{ forloop.index }}">
+      <h2>{{ name | default: 'その他のガイド' | escape }}</h2>
+      <ul class="guide-entries">
+        {% for guide in group.items %}
+          <li>
+            <h3><a href="{{ guide.url | relative_url }}">{{ guide.title | escape }}</a></h3>
+            <p>{{ guide.description | escape }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endfor %}
