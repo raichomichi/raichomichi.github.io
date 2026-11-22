@@ -1,0 +1,44 @@
+---
+layout: article
+title: 地図でたどる塩の道
+description: 糸魚川から松本まで千国街道の主な経由地をたどり、成相新田宿、栂池高原の宿、大町の塩問屋の場所と案内を探せます。
+permalink: /salt-road-map/
+guide_order: 5
+stylesheet: /salt-road-map/map.css
+script: /salt-road-map/leaflet-1.9.4/leaflet.js
+---
+{% assign road = site.data.salt_road %}
+<p>日本海の糸魚川から小谷・白馬・大町・池田・安曇野を経て、松本の城下へ。地図の破線は街道沿いの主な場所を順に結んだ概略です。歩くときは<a href="https://info-otari.jp/salt-road/">小谷村の区間別コース図</a>などを確認してください。</p>
+
+<section aria-label="千国街道の地図">
+  <div class="road-legend">
+    {% for place in road.places %}<span><b aria-hidden="true" class="road-symbol {{ place.style }}">{{ place.symbol }}</b>{{ place.category }}</span>{% endfor %}
+    <button id="road-reset" hidden type="button">街道全体を表示</button>
+  </div>
+  <div id="road-map" aria-label="糸魚川から松本までの千国街道" hidden></div>
+  <noscript><p>地図の拡大・地点選択には JavaScript を使用します。</p></noscript>
+</section>
+
+<h2>沿線で立ち寄る</h2>
+<div class="road-places">
+  {% for place in road.places %}
+    <section class="road-place" data-lat="{{ place.point[0] }}" data-lng="{{ place.point[1] }}">
+      <h3><b aria-hidden="true" class="road-symbol {{ place.style }}">{{ place.symbol }}</b> <span>{{ place.name }}</span></h3>
+      <p class="road-address">{{ place.category }} · {{ place.address }}</p>
+      <p class="road-description">{{ place.description }} <a href="{{ place.url }}">{{ place.link }}</a></p>
+      <button type="button" hidden>{{ place.name }}を地図で見る</button>
+    </section>
+  {% endfor %}
+</div>
+
+<h2>山道を区間ごとにたどる</h2>
+<ul>
+  <li><strong>糸魚川から大網へ</strong>　糸魚川の本町から美山・大野を通って根知谷へ。山口関所跡を過ぎて白池、角間池、大網峠へ登り、横川を渡って大網宿へ下ります。<a href="https://www.city.itoigawa.lg.jp/page/1846.html">糸魚川市の東まわりコース</a>・<a href="https://www.shiono-michi.jp/course_oamitouge/">大網峠越えの区間図</a></li>
+  <li><strong>小谷から栂池高原へ</strong>　北から進むと、千国番所跡から親坂を登って牛方宿へ出ます。栂池高原を経て、白馬の塩島新田、佐野へと続きます。<a href="https://info-otari.jp/salt-road/">小谷村の千国越え・石坂越えの区間案内</a></li>
+</ul>
+<h2>街道全体と地図の出典</h2>
+<p>この地図には、糸魚川から山口・大網を通る筋と、豊科から熊倉を経て松本へ入る筋を載せました。時代や荷の行き先によって、ほかの枝道も使われました。<a href="https://www.hrr.mlit.go.jp/matumoto/1.2.pdf#page=2">国土交通省の千国街道全図（図1.2、PDF）</a>・<a href="https://www.itoigawa-kanko.net/spot/shionomichi_museum/">糸魚川市観光協会の街道案内</a>・<a href="https://thejapanalps.com/activities/shionomichi/course-7/">日本アルプスガイドセンターの湖畔区間図</a>・<a href="https://www.city.matsumoto.nagano.jp/uploaded/attachment/70251.pdf">松本市の仁科街道資料（PDF）</a></p>
+<p>峠と池の位置は<a href="https://github.com/gsi-cyberjapan/experimental_anno">国土地理院の地図情報（注記）</a>で照合しました。集落の代表位置の一部は<a href="https://doi.org/10.20676/00000448">『日本歴史地名大系』地名項目データセット（CODH作成）</a>を丸めて使用しました。<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+<p><a href="{{ '/raicho-and-salt-road/' | relative_url }}">雷鳥の暮らしと塩の道の歴史を読む</a></p>
+<script id="road-points" type="application/json">{{ road.route | jsonify }}</script>
+<script src="{{ '/salt-road-map/map.js' | relative_url }}" defer></script>
