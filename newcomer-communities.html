@@ -1,0 +1,48 @@
+---
+layout: regional-guide
+title: 移住した人が参加できる地域の交流先
+description: 北アルプス地域と松本・安曇野・塩尻の交流先を、対象地域や参加方法から探せます。対面の開催案内、随時参加できるチャット、地域の告知先を紹介します。
+permalink: /newcomer-communities/
+guide_order: 7
+guide_category: 働く・つながる
+stylesheet: /assets/css/regional-guides.css
+script: /assets/js/community-dates.js
+lead: 冬の暮らしを先輩移住者に聞きたいとき、子どもと一緒に近所の人に会いたいとき。北アルプスの麓と松本地域で、気になる場に参加する方法を紹介します。
+---
+<nav class="guide-jumps" aria-label="交流のしかたから選ぶ" id="ways">
+  {% for group in site.data.newcomer_communities %}<a href="#{{ group.id }}">{{ group.title }}</a>{% endfor %}
+</nav>
+{% assign weekdays = '日,月,火,水,木,金,土' | split: ',' %}
+{% for group in site.data.newcomer_communities %}
+  <section class="guide-group" id="{{ group.id }}" aria-labelledby="{{ group.id }}-heading">
+    <h2 id="{{ group.id }}-heading">{{ group.title }}</h2>
+    <div class="community-entries">
+      {% for place in group.places %}
+        <article class="place-detail" id="{{ place.anchor }}">
+          <p class="place-area">{{ place.area }}</p>
+          <h3>{{ place.name }}</h3>
+          <dl class="participation">
+            <dt>対象</dt><dd>{{ place.audience }}</dd>
+            <dt>交流形式</dt><dd>{{ place.format }}</dd>
+            <dt>参加方法</dt><dd>{{ place.join }}</dd>
+          </dl>
+          {% if place.meeting %}
+            {% assign meeting = place.meeting %}
+            {% assign weekday = meeting.start | date: '%w' | plus: 0 %}
+            <div class="meeting-note" data-start="{{ meeting.start }}" data-end="{{ meeting.end }}">
+              <strong>主催者の開催案内</strong>
+              <p><time datetime="{{ meeting.start }}">{{ meeting.start | date: '%Y年%-m月%-d日' }}（{{ weekdays[weekday] }}）{{ meeting.start | date: '%H:%M' }}</time>〜<time datetime="{{ meeting.end }}">{{ meeting.end | date: '%H:%M' }}</time></p>
+              <p>{{ meeting.details }}</p>
+            </div>
+          {% elsif place.example %}
+            <p class="meeting-note"><strong>過去の開催例</strong>{{ place.example }}</p>
+          {% elsif place.schedule %}
+            <p class="meeting-note"><strong>通常の開催日</strong>{{ place.schedule }}</p>
+          {% endif %}
+          {% include guide-sources.html item=place %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
+<a class="guide-return" href="#ways">交流のしかたを選び直す</a>

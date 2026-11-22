@@ -1,0 +1,87 @@
+- area: 大町市
+  name: 北アルプスエントランス
+  bring: 利用可
+  power: あり
+  terms: 1回2時間まで無料
+  detail: JR信濃大町駅から徒歩1分。電車やバスを待つ間に、自分のPCを電源とWi-Fiにつないで作業できます。利用は平日9時30分〜16時30分です。
+  checked_on: "2026-11-22"
+  links:
+    - {title: 大町市創業支援協議会の設備・営業案内, url: "https://omachi-sougyou.com/northern-alps-entrance/"}
+
+- area: 池田町
+  name: 池田町図書館
+  bring: フリーデスク
+  onsite: 閲覧用PC
+  power: 1台50円
+  terms: 閲覧用PCは1回30分
+  detail: 交流センターかえで内。持ち込みPCには無料Wi-Fiが使え、コンセントはカウンターで申し込めます。館内PCはインターネット閲覧用です。利用申込書を提出して使います。印刷とUSBなどの外部メディアは利用できません。
+  checked_on: "2026-11-22"
+  links:
+    - {title: 図書館の席とPC利用案内（PDF）, url: "https://www.ikedamachi.net/cmsfiles/contents/0000000/211/toshokanriyou.pdf"}
+    - {title: かえでの設備・電源使用料, url: "https://www.ikedamachi.net/0000000194.html"}
+
+- area: 松川村
+  name: 松川村図書館
+  bring: 利用可
+  terms: 席は図書館に確認
+  detail: 松川村84-1、すずの音ホール内の図書館です。県立長野図書館の令和8年度調査でPCの持ち込みが確認できます。作業する席や電源を使いたい場合は、来館前に図書館へお問い合わせください。
+  checked_on: "2026-11-22"
+  links:
+    - {title: 松川村図書館の利用案内・問い合わせ先, url: "https://www.vill.matsukawa.nagano.jp/administration/?content=327"}
+    - {title: 長野県公共図書館概況のPC持ち込み欄（Excel）, url: "https://www.knowledge.pref.nagano.lg.jp/documents/50/r8_3-2.xlsx"}
+
+- area: 白馬村
+  name: 白馬ノルウェービレッジ
+  bring: 共用席
+  power: あり
+  terms: 共用席は無料
+  detail: 白馬ジャンプ競技場の麓、北城3476にあります。共用席で電源、Wi-Fi、モニターを使えます。打ち合わせ用の個室は予約制で2時間1,000円のプランがあります。ホールの貸切や営利利用も料金が変わるので、予約前にご確認ください。
+  checked_on: "2026-11-22"
+  links:
+    - {title: 白馬ノルウェービレッジの設備・開館時間, url: "https://www.vill.hakuba.nagano.jp/nv/"}
+    - {title: 個室の料金・予約方法, url: "https://www.vill.hakuba.nagano.jp/nv/facilities.html"}
+
+- area: 小谷村
+  name: UNPLAN Village Hakuba
+  bring: 共用席
+  power: あり
+  terms: 日帰りの料金・時間は要確認
+  detail: 栂池高原のホステルで、1階にWi-Fiと電源のある作業スペースがあります。宿泊者以外も利用できますが、料金と利用できる時間帯は時期によって異なります。日帰り利用は施設に問い合わせ、ミーティング用の個室は事前に予約してください。
+  checked_on: "2026-11-22"
+  links:
+    - {title: UNPLANの作業席・宿泊者以外の利用案内, url: "https://unplan.jp/hakuba/workation"}
+
+- area: 安曇野市
+  name: ライフホップ
+  bring: 利用可
+  terms: 予約不要・1時間500円から
+  detail: 豊科駅から徒歩約5分。無料Wi-Fiがあり、打ち合わせやオンライン会議にも使えます。ドロップインは2時間750円、1日1,500円。スタッフの滞在時間は平日9時30分〜14時です。営業日は施設のカレンダーで確認できます。
+  checked_on: "2026-11-22"
+  links:
+    - {title: ライフホップの料金・営業カレンダー, url: "https://www.lifehop.site/"}
+
+- area: 松本市
+  name: 松本市中央図書館
+  bring: 指定席
+  onsite: 閲覧用PC
+  power: 持込用4席
+  terms: 2階1番カウンターで受付
+  detail: 電源のある持ち込みPC席が4席あります。別に、ホームページや契約データベースを調べられるインターネット専用席が2階に4席あります。中央図書館は改修のため2027年7月〜2030年春に休館予定です。期間中の作業場所は、梓川図書館や波田図書館の持ち込み席もご確認ください。
+  checked_on: "2026-11-22"
+  links:
+    - {title: 松本市図書館の持ち込み可能な席, url: "https://www.lib.city.matsumoto.lg.jp/sp/faq/faq_detail.php?frmId=4"}
+    - {title: インターネット専用席の利用案内, url: "https://www.lib.city.matsumoto.lg.jp/sp/faq/faq_detail.php?frmId=5"}
+    - {title: 中央図書館の休館予定, url: "https://www.lib.city.matsumoto.lg.jp/0000000956.html"}
+
+- area: 塩尻市
+  name: 市民交流センターえんぱーく
+  bring: 館内の図書館
+  onsite: 館内PC
+  loan: 貸出ノートPC
+  terms: 2階のPCは1日1回・2時間まで
+  detail: 大門一番町12-2。2階のパソコンコーナーと館内用の貸出ノートPCは延長できません。借り方は2階総合受付へ。自分のPCを持参する場合、県の調査では館内の塩尻市立図書館本館が持ち込み可です。利用する席は図書館にご確認ください。
+  checked_on: "2026-11-22"
+  links:
+    - {title: えんぱーく2階の貸出時間・総合受付, url: "https://www.city.shiojiri.lg.jp/soshiki/37/67275.html"}
+    - {title: 塩尻市立図書館のPC・Wi-Fi利用案内, url: "https://www.library-shiojiri.jp/guide/faq"}
+    - {title: 長野県公共図書館概況のPC持ち込み欄（Excel）, url: "https://www.knowledge.pref.nagano.lg.jp/documents/50/r8_3-2.xlsx"}

@@ -60,8 +60,8 @@
 }
 .guide-entries h3 { font-size: 1.18rem; text-wrap: balance; }
 
-.bath-overview { padding: clamp(1rem, 3.5vw, 2rem); background: var(--mist); }
-.bath-overview > p { margin-top: .6rem; }
+.bath-overview, .guide-overview { padding: clamp(1rem, 3.5vw, 2rem); background: var(--mist); }
+.bath-overview > p, .guide-overview > p { margin-top: .6rem; }
 .bath-table {
   width: 100%;
   margin-block: 1rem .75rem;
@@ -89,7 +89,7 @@
 }
 .bath-detail dt { color: var(--moss); font-weight: 600; }
 .bath-detail dd { margin: 0; }
-.bath-sources {
+.bath-sources, .guide-sources {
   list-style: none;
   padding: 0;
   display: flex;
@@ -98,6 +98,66 @@
   margin-block: .5rem;
 }
 .guide-return { display: inline-block; margin-top: 1rem; }
+
+.workspace-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem .85rem;
+  margin-block: 1rem;
+}
+.workspace-filter[hidden], .workspace-table tr[hidden] { display: none; }
+.workspace-filter label { font-weight: 600; }
+.workspace-filter select {
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: .25rem .5rem;
+  border: 1px solid var(--moss);
+  border-radius: .25rem;
+  background: #fff;
+  color: var(--pine);
+  font: inherit;
+}
+.workspace-filter output, .workspace-table small, .place-area {
+  color: var(--moss);
+  font-size: .9rem;
+}
+.workspace-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  line-height: 1.6;
+}
+.workspace-table th, .workspace-table td {
+  padding: .7rem .6rem;
+  text-align: start;
+  border-bottom: 1px solid var(--line);
+}
+.workspace-table thead { background: var(--pine); color: #fff; }
+.workspace-table thead th { white-space: nowrap; }
+.workspace-table small { display: block; font-weight: 400; }
+.workspace-table td span { display: none; }
+.place-detail { padding-block: 1.4rem; border-bottom: 1px solid var(--line); }
+.place-detail > p { max-width: 46em; }
+.place-area { font-weight: 600; }
+.place-detail h3 { margin: .15rem 0 .6rem; font: 700 1.4rem/1.5 var(--serif); color: var(--pine); }
+.guide-sources { margin-top: .85rem; }
+.community-entries {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(1.5rem, 4vw, 3rem);
+}
+.participation {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: .5rem .85rem;
+  margin: 0;
+}
+.participation dt { color: var(--moss); font-weight: 600; }
+.participation dd { margin: 0; }
+.meeting-note { padding: .7rem 1rem; margin-top: 1rem; background: var(--mist); }
+.meeting-note strong { display: block; color: var(--pine); }
 
 .mountain-figure {
   margin: 0 0 1.5rem;
@@ -137,12 +197,34 @@
 .mountain-list strong { font-size: 1.1rem; margin-bottom: .4rem; }
 
 @media (max-width: 44rem) {
-  .guide-entries, .mountain-list, .mountain-figure { grid-template-columns: 1fr; }
+  .guide-entries, .mountain-list, .mountain-figure, .community-entries { grid-template-columns: 1fr; }
   .regional-heading-illustrated { grid-template-columns: 1fr; gap: .65rem; }
   .regional-heading-illustrated img { max-height: 8.5rem; }
+  .workspace-table, .workspace-table tbody { display: block; background: transparent; }
+  .workspace-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .workspace-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .55rem .6rem;
+    padding: .85rem;
+    margin-top: .6rem;
+    background: #fff;
+    border: 1px solid var(--line);
+  }
+  .workspace-table tbody tr[hidden] { display: none; }
+  .workspace-table th, .workspace-table td { border: 0; padding: 0; }
+  .workspace-table th, .workspace-table td:last-child { grid-column: 1 / -1; }
+  .workspace-table td span { display: block; color: var(--moss); font-size: .8rem; }
+  .workspace-table td:last-child { border-top: 1px solid var(--line); padding-top: .45rem; }
 }
 @media (max-width: 35rem) {
-  .bath-overview { padding: .9rem .6rem; }
+  .bath-overview, .guide-overview { padding: .9rem .6rem; }
   .bath-table { font-size: .94rem; }
   .bath-table th, .bath-table td { padding: .55rem .3rem; }
   .bath-detail dl { column-gap: .8rem; }

@@ -1,0 +1,89 @@
+- title: 対面で会う
+  id: in-person
+  places:
+    - name: 北アルプスUI会の移住定住交流会
+      anchor: 大町市と北アルプス地域の近隣町村
+      area: 大町市・池田町・松川村・白馬村・小谷村など
+      audience: 北アルプス山麓に移り住んだ人、移住を検討している人、地域に関心のある人
+      format: 大町市で対面
+      join: 市の開催案内にあるメールか電話で主催者へ。定住促進アドバイザーにも、暮らしや仕事のことを直接聞けます。
+      meeting:
+        start: "2026-12-06T16:20:00+09:00"
+        end: "2026-12-06T18:20:00+09:00"
+        details: 大町市総合福祉センター（大町1129）。茶菓代400円、先着20人。空き状況や次回の日程は主催者へご確認ください。
+      checked_on: "2026-11-22"
+      links:
+        - {title: 北アルプスUI会の日程・申込先を確認する, url: "https://www.iju-omachi.jp/events/ijuu-kouryuukai"}
+
+    - name: 松川こどもカフェ「リズム♫」
+      anchor: 松川村
+      area: 松川村
+      audience: 地域の子どもや親子。引っ越してきた家庭も、子どもだけでも参加できます。
+      format: すずの音ホール（松川村84-1）で対面
+      join: 食事をしながら親子やボランティアと交流できます。開催日の確認や事前申込は、県の施設票にある運営団体の連絡先へ。
+      schedule: 県の案内では第1・第3土曜の10時〜13時。子どもは無料、大人は500円（事前申込450円）。
+      checked_on: "2026-11-22"
+      links:
+        - {title: 開催日と運営団体の連絡先を見る（長野県・PDF）, url: "https://www.pref.nagano.lg.jp/jisedai/documents/documents/matsukawakodomocafe.pdf"}
+
+    - name: いけだまち交流会
+      anchor: 池田町
+      area: 池田町
+      audience: 移住した人、移住を検討中の人、池田町や近隣に暮らす人
+      format: 池田町内で対面
+      join: 手仕事などを体験しながら、町に暮らす人と知り合えます。会場や申込方法は回ごとに変わるため、町の移住サイトで次の募集を確認してください。
+      example: 2026年11月8日の第6回は、広津のゲストハウス HAMAYA で干し柿・あんぽ柿づくりを体験する企画でした。
+      checked_on: "2026-11-22"
+      links:
+        - {title: いけだまち暮らしで次の募集を探す, url: "https://www.ikedamachi.net/iju/index.html"}
+        - {title: 第6回の主催者案内を読む, url: "https://smout.jp/plans/32176"}
+
+    - name: 安曇野市の移住者交流会
+      anchor: 安曇野市で直接会うには
+      area: 安曇野市
+      audience: 安曇野市に移り住んだ人
+      format: 安曇野市内で対面
+      join: 市主催の交流会は年1回。市内での暮らしを先輩移住者と話せます。次の開催日、対象、申込方法は移住naviの新着情報で確認できます。
+      example: 2026年1月24日の会場は堀金公民館でした。この回には、翌日の移住ツアーに申し込んだ人も参加できました。
+      checked_on: "2026-11-22"
+      links:
+        - {title: 安曇野市移住naviで次の案内を探す, url: "https://azumino-ijyu.jp/news/"}
+        - {title: 市の交流会について読む, url: "https://azumino-ijyu.jp/qa/"}
+        - {title: 1月24日の開催例を見る, url: "https://azumino-ijyu.jp/2025/12/17/4494/"}
+
+- title: オンラインで話す
+  id: online
+  places:
+    - name: ヨクスムマツモト
+      anchor: 松本市安曇野市塩尻市
+      area: 松本市・安曇野市・塩尻市などの松本地域
+      audience: 松本地域に移り住んだ人や、これから移住を考えている人
+      format: LINEオープンチャットで随時参加
+      join: 市のページの「参加方法」から、ニックネームで入れます。先輩移住者に質問したり、ほかの人のやり取りを読んだりできます。参加費は無料（通信料は各自負担）。対面の催しは運営団体のInstagramで案内しています。
+      checked_on: "2026-11-22"
+      links:
+        - {title: 松本市の案内からチャットに参加する, url: "https://www.city.matsumoto.nagano.jp/site/matsumotogurashi/4084.html"}
+
+- title: 登録して行事を探す
+  id: announcements
+  places:
+    - name: 白馬ファンコミュニティ
+      anchor: 白馬村
+      area: 白馬村
+      audience: 白馬が好きな人。年齢・居住地を問わず、村民も登録できます。
+      format: LINEで登録、交流の日時・形式は行事ごと
+      join: スマートフォンで村の公式LINEを友だち追加し、村のページにある登録フォームへ進みます。会員向けの地域情報や、今後の交流会の知らせを受け取れます。
+      checked_on: "2026-11-22"
+      links:
+        - {title: 白馬村の参加条件・登録フォームを開く, url: "https://www.vill.hakuba.lg.jp/gyosei/furusatonozei_ijuteiju/relationship-population/hakuba_fan.html"}
+
+    - name: おたりのわ
+      anchor: 小谷村
+      area: 小谷村の各集落
+      audience: 村内外から祭りや農作業、集落の活動に関わりたい人
+      format: LINE・Instagramで告知、活動は現地
+      join: 小谷村のページから公式LINEを友だち追加するか、移住ナビのInstagramをフォローします。参加したい企画の地区、対象、申込先を各回のお知らせで確認してください。
+      checked_on: "2026-11-22"
+      links:
+        - {title: 小谷村の案内から公式LINE・Instagramを開く, url: "https://www.vill.otari.nagano.jp/soshiki/kankochiikishinko-shurakushien/gyomu/1/423.html"}
+        - {title: 小谷村移住なびで地域の活動を見る, url: "https://otarigurashi.com/"}

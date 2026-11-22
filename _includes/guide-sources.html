@@ -1,0 +1,6 @@
+<ul class="guide-sources">
+  {% for link in include.item.links %}
+    <li><a href="{{ link.url | escape }}">{{ link.title | escape }}</a></li>
+  {% endfor %}
+</ul>
+<p class="guide-note">公式案内を確認した日　<time datetime="{{ include.item.checked_on }}">{{ include.item.checked_on | date: '%Y年%-m月%-d日' }}</time></p>

@@ -1,0 +1,60 @@
+---
+layout: regional-guide
+title: コワーキングスペースとPCを使える場所
+description: 北アルプス地域と安曇野・松本・塩尻の作業場所を、PCの持ち込み、貸出・閲覧用PC、電源、利用条件で比べられます。
+permalink: /workspaces/
+guide_order: 1
+guide_category: 働く・つながる
+stylesheet: /assets/css/regional-guides.css
+script: /assets/js/workspaces.js
+lead: 電車を待つ間にノートPCを開きたい日も、出先でPCを借りたい日も。北アルプス地域と安曇野・松本・塩尻の作業席を、使いたい設備から選べます。
+---
+<section class="guide-overview" id="compare" aria-labelledby="workspace-heading">
+  <h2 id="workspace-heading">PCと電源で作業場所を選ぶ</h2>
+  <p>「要確認」は公式案内で利用条件を確認できなかった項目です。施設名を選ぶと受付や利用時間が分かります。</p>
+  <div class="workspace-filter" hidden>
+    <label for="equipment">使いたい設備</label>
+    <select id="equipment">
+      <option value="">すべての作業場所</option>
+      <option value="power">持ち込みPCの電源がある</option>
+      <option value="onsite">館内のPCで調べられる</option>
+      <option value="loan">ノートPCを借りられる</option>
+    </select>
+    <output for="equipment" aria-live="polite"></output>
+  </div>
+  <table class="workspace-table" role="table" aria-labelledby="workspace-heading">
+    <thead role="rowgroup"><tr role="row">
+      <th scope="col">施設・市町村</th><th scope="col">持ち込みPC</th><th scope="col">貸出・備付PC</th><th scope="col">電源</th><th scope="col">利用条件</th>
+    </tr></thead>
+    <tbody role="rowgroup">
+      {% for place in site.data.workspaces %}
+        <tr role="row" data-equipment="{% if place.onsite %}onsite {% endif %}{% if place.loan %}loan {% endif %}{% if place.power %}power{% endif %}">
+          <th scope="row" role="rowheader"><a href="#{{ place.area }}">{{ place.name | escape }}</a><small>{{ place.area }}</small></th>
+          <td role="cell"><span aria-hidden="true">持ち込みPC</span>{{ place.bring | default: '要確認' }}</td>
+          <td role="cell">
+            <span aria-hidden="true">貸出・備付PC</span>
+            {% if place.loan or place.onsite %}
+              {{ place.loan }}{% if place.loan and place.onsite %}・{% endif %}{{ place.onsite }}
+            {% else %}
+              要確認
+            {% endif %}
+          </td>
+          <td role="cell"><span aria-hidden="true">電源</span>{{ place.power | default: '要確認' }}</td>
+          <td role="cell"><span aria-hidden="true">利用条件</span>{{ place.terms }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+<section class="guide-group" aria-labelledby="places-heading">
+  <h2 id="places-heading">作業席・受付の案内</h2>
+  {% for place in site.data.workspaces %}
+    <article class="place-detail" id="{{ place.area }}">
+      <p class="place-area">{{ place.area }}</p>
+      <h3>{{ place.name | escape }}</h3>
+      <p>{{ place.detail }}</p>
+      {% include guide-sources.html item=place %}
+    </article>
+  {% endfor %}
+</section>
+<a class="guide-return" href="#compare">作業場所の比較に戻る</a>
