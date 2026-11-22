@@ -18,6 +18,16 @@ permalink: /
        alt="残雪の北アルプスを背に、ハイマツの岩場に立つ雷鳥のイラスト" width="1536" height="1024" fetchpriority="high">
 </section>
 
+<section class="wrap field-inner" aria-labelledby="guides-heading">
+  <h2 id="guides-heading">地域ガイド</h2>
+  <ul class="guide-links">
+    {% assign guides = site.pages | where_exp: 'item', 'item.guide_order' | sort: 'guide_order' %}
+    {% for guide in guides %}
+      <li><a href="{{ guide.url | relative_url }}">{{ guide.title | escape }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section class="field-section" aria-labelledby="ideas-heading">
   <div class="wrap field-inner">
     <h2 id="ideas-heading">この土地で<br>試したいこと</h2>
