@@ -8,8 +8,8 @@ guide_category: 自然・歴史を知る
 stylesheet: /assets/css/regional-guides.css
 lead: 安曇野の田んぼから西を向くと、常念岳が見えます。麓から眺める山の輪郭を手がかりに、北アルプスの峰々と、その呼び名の由来をたどります。
 ---
-<figure class="mountain-figure">
-  <div class="mountain-photo">
+<figure class="guide-figure">
+  <div class="guide-photo">
     <img src="{{ '/assets/images/jonen-azumino-hotaka.jpg' | relative_url }}" width="1627" height="1002" alt="安曇野市穂高から西を望む。青空を背に、中央の常念岳から雪の稜線が左右へ下っている。">
     <span class="summit-label" aria-hidden="true">常念岳</span>
   </div>

@@ -8,6 +8,8 @@ theme: null
 organization_url: https://github.com/raichomichi
 contact_url: https://muchuu.net/
 
+guide_group_order: [働く・つながる, 出かける・歩く, 自然・歴史を知る]
+
 navigation:
   - title: トップ
     path: /

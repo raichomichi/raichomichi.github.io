@@ -1,12 +1,38 @@
 ---
-layout: article
+layout: regional-guide
 title: 地域の公開データと歴史資料
-description: 北アルプス地域と安曇野・松本・塩尻を題材に、散策マップやクイズを作るための公開データと歴史資料を紹介します。
+description: 松本城から旧開智学校までの文化財散策地図を掲載。北アルプス地域と安曇野・松本・塩尻で、地図やクイズに使える公開データと歴史資料を紹介します。
 permalink: /local-sources/
+stylesheet: /assets/css/regional-guides.css
+lead: 歩いて行ける文化財を地図に載せるなら、まず場所が分かるデータを。湧き水にまつわるクイズを作るなら、土地に残る昔話を。企画の出発点になる資料と、それぞれの使い道を紹介します。
 guide_order: 2
 guide_category: 自然・歴史を知る
 ---
-歩いて行ける文化財を地図に載せるなら、まず場所が分かるデータを。湧き水にまつわるクイズを作るなら、土地に残る昔話を。企画の出発点になる資料と、それぞれの使い道を紹介します。
+<nav class="guide-jumps" aria-label="公開データと歴史資料の目次">
+  <a href="#cultural-walk">松本の散策地図</a>
+  <a href="#地図やグラフを作れる公開データ">公開データの配布先</a>
+  <a href="#地域の歴史民話を調べる資料">歴史・民話の資料</a>
+</nav>
+
+## 松本城から開智へ、三つの文化財を歩く
+{: #cultural-walk}
+
+松本城天守から北へ直線で約500メートルのところに、旧開智学校校舎と旧司祭館が並んでいます。城、学校、住まいを順に見ると、建てた時代と使い道が外観にも表れています。
+
+<figure class="cultural-walk">
+  <img src="{{ '/assets/images/matsumoto-cultural-walk.png' | relative_url }}" width="600" height="700" alt="松本城天守は地図の南側。北にある旧開智学校校舎のすぐ西に旧司祭館がある。">
+  <figcaption>
+    <h3>地図の番号と建物の見どころ</h3>
+    <ol>
+      <li><strong>松本城天守</strong>壁の下部は黒漆塗りの板、上部は白い漆喰。堀越しに眺めると境目がよく見えます。<a href="https://www.matsumoto-castle.jp/about/tower/details">天守五棟の解説</a></li>
+      <li><strong>旧開智学校校舎</strong>正面から屋根を見上げると、中央に八角形の塔があります。<a href="https://matsu-haku.com/kaichi/info">校舎の見学案内</a></li>
+      <li><strong>旧松本カトリック教会司祭館</strong>校舎の西隣にある明治の西洋館。宣教師たちが約100年にわたって暮らした住まいです。<a href="https://matsu-haku.com/kaichi/shisaikan">旧司祭館の見学案内</a></li>
+    </ol>
+    <a href="https://maps.gsi.go.jp/#17/36.24093/137.96832/">地理院地図で周辺の道を見る</a>
+  </figcaption>
+</figure>
+
+**この地図の作り方**　松本市文化財課が公開する「指定文化財」のCSVから、「公開の有無」が「公開」の建造物3件を選び、名称・緯度・経度を使いました。国土地理院の淡色地図に建物の位置と番号を重ね、旧司祭館の名称を地図上で短くしています。[松本市の元データと配布形式](https://www2.wagmap.jp/matsumoto/OpenDataDetail?lid=261&mids=28)・[地理院タイル一覧](https://maps.gsi.go.jp/development/ichiran.html#pale)
 
 ## 地図やグラフを作れる公開データ
 

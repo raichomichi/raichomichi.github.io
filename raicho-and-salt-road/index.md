@@ -1,11 +1,30 @@
 ---
-layout: article
+layout: regional-guide
 title: 雷鳥と塩の道
 description: 北アルプスの雷鳥の暮らしと観察先、糸魚川から松本を結んだ千国街道の牛方宿や塩にまつわる伝承を紹介します。
 permalink: /raicho-and-salt-road/
+stylesheet: /assets/css/regional-guides.css
+lead: 乗鞍岳では、季節とともに羽の色が変わる雷鳥が暮らしています。山麓の千国街道には、塩を運んだ人と牛が休んだ宿が残っています。
 guide_order: 4
 guide_category: 自然・歴史を知る
 ---
+<figure class="guide-figure">
+  <div class="guide-photo">
+    <img src="{{ '/assets/images/ushikatajuku.webp' | relative_url }}" width="1200" height="798" alt="街道に面した木造の牛方宿。大きな茅葺き屋根が四方に傾き、軒先が入口の上まで張り出す。">
+  </div>
+  <figcaption>
+    <strong>千国街道に残る牛方宿</strong>
+    小谷村の旧千國家住宅です。軒先から棟へ目を移すと、茅を厚く重ねた寄棟屋根の形がわかります。この屋根の下で、荷を運んだ牛と人が一晩を過ごしました。<a href="https://www.vill.otari.nagano.jp/soshiki/kyoikuiinkai-kominkan/gyomu/8/1/4/37.html">小谷村による建物の解説</a>
+    <small>2022年9月撮影 · <a href="https://commons.wikimedia.org/wiki/File:Ushikatajuku_ac_(1).jpg">Asturio Cantabrio / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>（縮小・WebP変換）</small>
+  </figcaption>
+</figure>
+
+<nav class="guide-jumps" aria-label="雷鳥と塩の道の目次">
+  <a href="#山の上で暮らす雷鳥">雷鳥を観察する</a>
+  <a href="#日本海の塩を信州へ">千国街道と牛方宿</a>
+  <a href="#敵に塩を送ると松本のあめ市">松本のあめ市</a>
+</nav>
+
 ## 山の上で暮らす雷鳥
 
 乗鞍岳の畳平は標高約2,700メートル。バスを降りたところから、もう雷鳥の暮らす高山です。雪が消えると、雷鳥は高山植物の新芽や葉、花や実をついばみます。夏には岩場や草地に溶け込むまだらの羽が、冬には雪にまぎれる白い羽へと生え替わります。[大町山岳博物館のライチョウ解説](https://www.omachi-sanpaku.com/facility/garden/animal/14.php)

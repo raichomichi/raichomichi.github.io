@@ -8,7 +8,7 @@
   font-size: clamp(2rem, 4.5vw, 3.6rem);
   text-wrap: balance;
 }
-.guide-path, .guide-note, .mountain-figure small {
+.guide-path, .guide-note, .guide-figure small {
   color: var(--moss);
   font-size: .9rem;
 }
@@ -159,15 +159,15 @@
 .meeting-note { padding: .7rem 1rem; margin-top: 1rem; background: var(--mist); }
 .meeting-note strong { display: block; color: var(--pine); }
 
-.mountain-figure {
+.guide-figure {
   margin: 0 0 1.5rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-items: center;
   background: var(--mist);
 }
-.mountain-photo { position: relative; }
-.mountain-photo img { display: block; width: 100%; height: auto; }
+.guide-photo { position: relative; }
+.guide-photo img { display: block; width: 100%; height: auto; }
 .summit-label {
   position: absolute;
   left: 51%;
@@ -189,15 +189,30 @@
   height: .7rem;
   border-left: 2px solid var(--pine);
 }
-.mountain-figure figcaption { padding: clamp(.9rem, 3vw, 2rem); }
-.mountain-figure strong, .mountain-list strong { display: block; color: var(--pine); }
-.mountain-figure strong { font: 700 1.35rem/1.5 var(--serif); margin-bottom: .5rem; }
-.mountain-figure small { display: block; margin-top: .6rem; }
+.guide-figure figcaption { padding: clamp(.9rem, 3vw, 2rem); }
+.guide-figure strong, .mountain-list strong { display: block; color: var(--pine); }
+.guide-figure strong { font: 700 1.35rem/1.5 var(--serif); margin-bottom: .5rem; }
+.guide-figure small { display: block; margin-top: .6rem; }
 .regional-guide > p { max-width: 46em; margin-top: 1rem; }
 .mountain-list strong { font-size: 1.1rem; margin-bottom: .4rem; }
 
+.cultural-walk {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
+  margin: 1.3rem 0;
+  align-items: center;
+  background: var(--mist);
+}
+.cultural-walk img { width: 100%; height: auto; display: block; }
+.cultural-walk figcaption { padding: clamp(1rem, 3vw, 2rem); }
+.cultural-walk h3 { margin: 0; color: var(--pine); font: 700 1.25rem/1.5 var(--serif); }
+.cultural-walk ol { padding-inline-start: 1.6rem; margin-block: .8rem 1.2rem; }
+.cultural-walk li + li { margin-top: .8rem; }
+.cultural-walk li::marker, .cultural-walk li strong { color: var(--pine); font-weight: 700; }
+.cultural-walk li strong { display: block; }
+
 @media (max-width: 44rem) {
-  .guide-entries, .mountain-list, .mountain-figure, .community-entries { grid-template-columns: 1fr; }
+  .guide-entries, .mountain-list, .guide-figure, .community-entries, .cultural-walk { grid-template-columns: 1fr; }
   .regional-heading-illustrated { grid-template-columns: 1fr; gap: .65rem; }
   .regional-heading-illustrated img { max-height: 8.5rem; }
   .workspace-table, .workspace-table tbody { display: block; background: transparent; }

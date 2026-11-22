@@ -151,6 +151,14 @@ a:hover { color: #587242; }
 .field-copy p + p, .field-copy a { margin-top: .8rem; }
 .field-copy a { display: inline-block; }
 
+.home-guide-groups { display: grid; gap: 1.6rem; }
+.home-guide-groups h3 {
+  margin: 0;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--moss);
+  color: var(--pine);
+  font: 700 1.2rem/1.6 var(--serif);
+}
 .guide-links { list-style: none; padding: 0; margin: 0; }
 .guide-links li { border-bottom: 1px solid var(--line); }
 .guide-links a { display: block; padding-block: .65rem; font-weight: 600; }
