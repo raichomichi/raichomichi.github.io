@@ -1,0 +1,82 @@
+# Named waypoints for a regional overview, in travel order. Each pair is [latitude, longitude].
+route:
+  - {name: 糸魚川・本町, point: [37.0447, 137.8567]}
+  - {name: 美山公園付近, point: [37.0255, 137.869]}
+  - {name: 大野, point: [37.0055, 137.8746]}
+  - {name: 中山峠付近, point: [36.9851, 137.8760]}
+  - {name: 根知谷・仁王堂付近, point: [36.9690, 137.8784]}
+  - {name: 根知谷・和泉, point: [36.9567, 137.8887]}
+  - {name: 山口, point: [36.9389, 137.9007]}
+  - {name: 山口から峠への山道, point: [36.9280, 137.9011]}
+  - {name: 白池, point: [36.9141, 137.9008]}
+  - {name: 角間池, point: [36.9096, 137.8982]}
+  - {name: 大網峠, point: [36.9076, 137.8968]}
+  - {name: 横川方面, point: [36.9020, 137.8932]}
+  - {name: 大網, point: [36.8902, 137.8759]}
+  - {name: 大網から葛葉峠への道, point: [36.8801, 137.8671]}
+  - {name: 葛葉峠, point: [36.8711, 137.8696]}
+  - {name: 湯原方面, point: [36.8650, 137.8756]}
+  - {name: 北小谷方面, point: [36.8500, 137.8970]}
+  - {name: 来馬, point: [36.8348, 137.8955]}
+  - {name: 石坂, point: [36.8156, 137.8959]}
+  - {name: 小谷村郷土館付近, point: [36.7790, 137.9084]}
+  - {name: 千国, point: [36.7562, 137.8945]}
+  - {name: 牛方宿付近, point: [36.7550, 137.8825]}
+  - {name: 栂池高原, point: [36.7422, 137.8716]}
+  - {name: 塩島新田, point: [36.7141, 137.8684]}
+  - {name: 白馬・深沢空峠, point: [36.6872, 137.8577]}
+  - {name: 飯森, point: [36.6695, 137.8473]}
+  - {name: 飯田, point: [36.6593, 137.8492]}
+  - {name: 沢渡, point: [36.6430, 137.8440]}
+  - {name: 佐野, point: [36.6356, 137.8430]}
+  - {name: 佐野坂, point: [36.6220, 137.8457]}
+  - {name: 青木湖東岸, point: [36.6150, 137.8427]}
+  - {name: 青木, point: [36.6050, 137.8443]}
+  - {name: 中綱, point: [36.5946, 137.8405]}
+  - {name: 海ノ口, point: [36.5707, 137.8398]}
+  - {name: 木崎湖北西岸, point: [36.5651, 137.8294]}
+  - {name: 木崎湖西岸, point: [36.5560, 137.8327]}
+  - {name: 木崎湖南岸, point: [36.5462, 137.8385]}
+  - {name: 大町市街への旧道, point: [36.5296, 137.8447]}
+  - {name: 大町, point: [36.5054, 137.8592]}
+  - {name: 池田, point: [36.4201, 137.8784]}
+  - {name: 十日市場, point: [36.3777, 137.8811]}
+  - {name: 高瀬川・現在の高瀬橋付近, point: [36.3758, 137.8769]}
+  - {name: 安曇追分駅前の分岐付近, point: [36.3718, 137.8735]}
+  - {name: 安曇野・穂高, point: [36.3403, 137.8854]}
+  - {name: 豊科・成相, point: [36.2998, 137.9061]}
+  - {name: 吉野, point: [36.2888, 137.9169]}
+  - {name: 熊倉, point: [36.2884, 137.9363]}
+  - {name: 平瀬, point: [36.2650, 137.9417]}
+  - {name: 岡田塩倉, point: [36.2683, 137.9601]}
+  - {name: 岡田, point: [36.2660, 137.9747]}
+  - {name: 松本・本町, point: [36.2327, 137.9694]}
+
+places:
+  - name: ホテル サニーバレー
+    category: 今泊まれる宿
+    symbol: 宿
+    style: inn
+    point: [36.74224, 137.87164]
+    address: 小谷村大字千国乙254番地
+    description: 栂池高原の松沢口近く、街道に面した宿。交通案内から宿泊予約にも進めます。
+    url: https://sunny-valley.net/access.html
+    link: 宿の交通・宿泊案内
+  - name: 塩の道ちょうじや
+    category: 見どころ
+    symbol: 見
+    style: museum
+    point: [36.50417, 137.86033]
+    address: 大町市大町2572
+    description: 塩問屋を営んだ平林家の建物で、歩荷の運搬道具や街道を旅した人の装いを見学できます。
+    url: https://kanko-omachi.gr.jp/spot/choujiya/
+    link: 大町市観光協会の見学案内
+  - name: 成相新田宿
+    category: 昔の宿場
+    symbol: 町
+    style: post-town
+    point: [36.2998, 137.9061]
+    address: 安曇野市豊科・成相から新田にかけて
+    description: 成相と新田の町並みに人や荷が集まり、松本へ向かう道が分かれた宿場。目印は宿場一帯の代表点です。
+    url: https://www.city.azumino.nagano.jp/uploaded/life/136759_248961_misc.pdf
+    link: 安曇野市の宿場資料（PDF）
