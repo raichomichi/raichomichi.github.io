@@ -1,0 +1,102 @@
+- name: 大町商工会議所
+  region: alps
+  area: 大町市
+  kind: 講座の告知元
+  topics: [IT, 生成AI]
+  description: 地域の事業者に向けた講座を案内しています。生成AIを仕事に取り入れる方法を学ぶセミナーの開催実績があります。
+  url: https://occi.jp/
+  example_url: https://ez-system.jp/npwants/contents/imagefiles/006/files/%E4%BC%9A%E5%A0%B1%E3%81%8A%E3%81%8A%E3%81%BE%E3%81%A1214%E5%8F%B7.pdf
+  checked_on: "2026-11-22"
+
+- name: あづみのまつかわ教室
+  region: alps
+  area: 松川村
+  kind: 体験教室
+  topics: [IT]
+  description: 子どもがプログラミングやロボットに触れられる教室です。親子で最初の一歩を探すときは、体験学習の案内から。
+  url: https://azuminomatsukawa.com/
+  checked_on: "2026-11-22"
+
+- name: 池田町商工会
+  region: alps
+  area: 池田町
+  kind: 講座の告知元
+  topics: [Web, デザイン]
+  description: お店や地域の情報発信を学びたい人へ。Canvaでの画像作成や、Googleビジネスプロフィールとショート動画の活用講座を案内しています。
+  url: https://ikeda-sci.jp/news/
+  checked_on: "2026-11-22"
+
+- name: kintone Café 白馬
+  region: alps
+  area: 白馬村
+  kind: 勉強会
+  topics: [IT]
+  description: 業務アプリを作る人と使う人が集まり、kintoneの使い方や身近な活用例を持ち寄る地域の勉強会です。
+  url: https://kintonecafe-hakuba.connpass.com/
+  example_url: https://kintonecafe-hakuba.connpass.com/event/400627/
+  checked_on: "2026-11-22"
+
+- name: Co-Lab HAKUBA Summit
+  region: alps
+  area: 白馬村・小谷村
+  kind: 交流イベント
+  topics: [IT, デザイン]
+  description: デジタルノマドやクリエイターと地域事業者が、地域の課題に一緒に取り組むサミットです。2026年回は10月22日から11月1日までの日程でした。
+  url: https://colab-hakuba.com/ja
+  example_url: https://prtimes.jp/main/html/rd/p/000000008.000154046.html
+  checked_on: "2026-11-22"
+
+- name: 安曇野市リモートワーカー育成支援事業
+  region: chushin
+  area: 安曇野市
+  kind: 講座・交流会
+  topics: [Web, デザイン, 生成AI]
+  description: 在宅で働く人のための講座と交流会を探せます。Webマーケティングと生成AIを学ぶコースや、Canvaで名刺を作る交流会の開催例があります。
+  url: https://azumino-career.jp/program
+  example_url: https://azumino-career.jp/information/3462
+  checked_on: "2026-11-22"
+
+- name: 信州 WordPress Meetup
+  region: chushin
+  area: 松本市
+  kind: コミュニティ
+  topics: [Web]
+  description: WordPressでサイトを作る人や、記事の更新・運営をする人が集まります。松本で開かれた回のテーマや次の告知をMeetupで確認できます。
+  url: https://www.meetup.com/ja-jp/shinshu-wordpress-meetup/
+  checked_on: "2026-11-22"
+
+- name: Code for Matsumoto
+  region: chushin
+  area: 松本市
+  kind: コミュニティ・ハッカソン
+  topics: [IT, 生成AI]
+  description: 家族や友人のために、生成AIを使ってアプリを試作する人たちの集まりです。まつもと生成AIハッカソンの各回のテーマと記録を読めます。
+  url: https://hackathon.code4matsumoto.org/
+  checked_on: "2026-11-22"
+
+- name: 塩尻情報プラザ
+  region: chushin
+  area: 塩尻市
+  kind: 講座の告知元
+  topics: [IT, 生成AI]
+  description: 初めて生成AIを使う人に向けた講座など、地域でデジタル技術を学べる機会を紹介しています。日程や対象者を各回のお知らせで確認できます。
+  url: https://www.shinshu.ad.jp/wp/index.php/information/
+  checked_on: "2026-11-22"
+
+- name: 長野アートディレクターズクラブ（長野ADC）
+  region: shinshu
+  area: 県内各地
+  kind: クリエイター団体
+  topics: [デザイン]
+  description: 長野県で活動するデザイナーやクリエイターによる団体です。作品の公開審査や展示、交流会から、県内のデザインと作り手を知ることができます。
+  url: https://nagano-adc.com/
+  checked_on: "2026-11-22"
+
+- name: JAWS-UG Nagano
+  region: shinshu
+  area: 県内各地
+  kind: ユーザーグループ
+  topics: [IT]
+  description: AWSやクラウド技術について学び、経験を共有するコミュニティです。長野や松本での勉強会の記録や、次のイベントを探せます。
+  url: https://jawsug-nagano.connpass.com/
+  checked_on: "2026-11-22"

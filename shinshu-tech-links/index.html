@@ -1,0 +1,103 @@
+---
+layout: tech-links
+title: 信州のIT・デザインイベントとコミュニティ
+description: 北アルプス地域を中心に、信州のIT・Web・デザイン・生成AIのイベントやコミュニティを探せるリンク集です。
+permalink: /shinshu-tech-links/
+updated_on: "2026-11-22"
+topics: [IT, Web, デザイン, 生成AI]
+regions:
+  - id: alps
+    name: 北アルプス地域
+  - id: chushin
+    name: 安曇野・松本・塩尻
+  - id: shinshu
+    name: 信州各地
+---
+{% assign directory = site.data.shinshu_tech_links %}
+{% assign checked_dates = directory.communities | concat: directory.events | map: 'checked_on' %}
+{% assign last_updated = checked_dates | push: page.updated_on | sort | last %}
+<section class="hero wrap" aria-labelledby="title">
+  <div class="hero-copy">
+    <h1 id="title"><span>信州のIT・デザイン</span><span>イベントとコミュニティ</span></h1>
+    <p class="updated">最終更新日　<time datetime="{{ last_updated }}">{{ last_updated | date: '%Y年%-m月%-d日' }}</time></p>
+    <p>北アルプスの麓から、安曇野・松本・塩尻、信州各地へ。<br class="desktop-break">IT・Web・デザイン・生成AIを学ぶ場や、いっしょにつくる仲間を探せるリンク集です。</p>
+    <a class="button" href="#directory">地域から探す</a>
+  </div>
+  <img src="{{ '/assets/images/raicho-alps.webp' | relative_url }}" width="1536" height="1024" alt="北アルプスの山並みと岩場に立つ雷鳥" fetchpriority="high">
+</section>
+
+<section id="upcoming" class="upcoming" aria-labelledby="upcoming-title">
+  <div class="wrap">
+    <div class="section-intro">
+      <h2 id="upcoming-title">近いうちに開催</h2>
+      <a class="calendar-link" href="https://connpass.com/calendar/nagano/">長野県のIT勉強会カレンダー</a>
+    </div>
+    {% assign events = directory.events | sort: 'starts_at' %}
+    {% assign weekdays = '日,月,火,水,木,金,土' | split: ',' %}
+    {% for event in events %}
+      {% unless event.cancelled %}
+        {% assign weekday = event.starts_at | date: '%w' | plus: 0 %}
+        {% assign start_day = event.starts_at | date: '%F' %}
+        {% assign end_day = event.ends_at | date: '%F' %}
+        <article class="event" data-start="{{ event.starts_at | escape }}" data-deadline="{{ event.apply_by | escape }}" hidden>
+          <time class="date-block" datetime="{{ event.starts_at | escape }}"><small>{{ event.starts_at | date: '%Y年%-m月' }}</small><b>{{ event.starts_at | date: '%-d' }}</b><small>{{ weekdays[weekday] }}曜日</small></time>
+          <div class="event-copy">
+            <p class="eyeline">{{ event.area | escape }}　·　{{ event.cost | escape }}</p>
+            <h3>{{ event.name | escape }}</h3>
+            <p>{{ event.description | escape }}</p>
+            <p class="event-details">{{ event.starts_at | date: '%H:%M' }}〜{% if end_day != start_day %}{{ event.ends_at | date: '%-m月%-d日 ' }}{% endif %}{{ event.ends_at | date: '%H:%M' }}　／　{{ event.venue | escape }}　／　{{ event.audience | escape }}</p>
+            <a class="textlink" href="{{ event.url | escape }}">主催者の案内・申し込み</a>
+            <p class="fine">{% if event.apply_by %}申込締切 {{ event.apply_by | date: '%-m月%-d日 %H:%M' }}　·　{% endif %}確認 {{ event.checked_on | escape }}</p>
+          </div>
+        </article>
+      {% endunless %}
+    {% endfor %}
+    <p id="no-events" hidden>現在掲載している開催予定はありません。<a href="#directory">地域の団体・告知元</a>でも次の予定を探せます。</p>
+    <noscript><p>直近の日程は上のカレンダーや<a href="#directory">地域の団体・告知元</a>から確認できます。</p></noscript>
+  </div>
+</section>
+
+<section id="directory" class="directory wrap" aria-labelledby="directory-title">
+  <h2 id="directory-title">地域から探す</h2>
+  <nav class="region-nav" aria-label="地域別の掲載先">
+    {% for region in page.regions %}<a href="#{{ region.id }}">{{ region.name }}</a>{% endfor %}
+  </nav>
+  <form id="filter" hidden>
+    <fieldset>
+      <legend>関心のある分野で絞る</legend>
+      <div class="choices">
+        <label><input type="radio" name="topic" value="" checked><span>すべて</span></label>
+        {% for topic in page.topics %}<label><input type="radio" name="topic" value="{{ topic | escape }}"><span>{{ topic }}</span></label>{% endfor %}
+      </div>
+    </fieldset>
+    <output id="count" aria-live="polite"></output>
+  </form>
+  {% for region in page.regions %}
+    {% assign entries = directory.communities | where: 'region', region.id %}
+    <section class="region" id="{{ region.id }}" aria-labelledby="{{ region.id }}-heading">
+      <h3 id="{{ region.id }}-heading">{{ region.name }}</h3>
+      <ul class="entries">
+        {% for item in entries %}
+          <li class="entry" data-topics="{{ item.topics | join: ' ' | escape }}">
+            <p class="eyeline">{{ item.area | escape }}　·　{{ item.kind | escape }}</p>
+            <h4><a href="{{ item.url | escape }}">{{ item.name | escape }}</a></h4>
+            <p>{{ item.description | escape }}</p>
+            <div class="metadata">
+              <span>{{ item.topics | join: ' / ' }}</span>
+              {% if item.example_url %}<a href="{{ item.example_url | escape }}" aria-label="{{ item.name | escape }}の開催例">開催例{% if item.example_url contains '.pdf' %}（PDF）{% endif %}</a>{% endif %}
+              <span>確認 <time datetime="{{ item.checked_on }}">{{ item.checked_on }}</time></span>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</section>
+
+<section id="contribute" class="contribute" aria-labelledby="contribute-title">
+  <div class="wrap contribute-inner">
+    <div><h2 id="contribute-title">地域の情報を寄せる</h2>
+    <p>掲載したい勉強会や、告知先の変更があれば、団体名・地域・公式告知のURLをお知らせください。</p></div>
+    <a class="button" href="{{ site.contact_url }}">運営者に連絡する</a>
+  </div>
+</section>

@@ -12,7 +12,7 @@ permalink: /projects/
         <p>{{ project.description | escape }}</p>
         <div class="project-links">
           {% if project.site_url and project.site_url != empty %}
-            <a class="text-link" href="{{ project.site_url | escape }}" aria-label="{{ project.name | escape }}を使ってみる">使ってみる</a>
+            <a class="text-link" href="{{ project.site_url | relative_url | escape }}" aria-label="{{ project.name | escape }}を使ってみる">使ってみる</a>
           {% endif %}
           {% if project.repo_url and project.repo_url != empty %}
             <a class="text-link" href="{{ project.repo_url | escape }}" aria-label="{{ project.name | escape }}のソースコードを見る">ソースコードを見る</a>

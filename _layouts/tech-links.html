@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | escape }}">
+  <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/shinshu-tech-links/assets/site.css' | relative_url }}">
+  <script defer src="{{ '/shinshu-tech-links/assets/directory.js' | relative_url }}"></script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="masthead">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="mark" aria-hidden="true"></span>{{ site.title }}</a>
+      <nav aria-label="ページ内メニュー">
+        <a href="#upcoming">開催予定</a><a href="#directory">地域から探す</a><a href="#contribute">情報提供</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">{{ content }}</main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav aria-label="関連ページ"><a href="{{ '/projects/' | relative_url }}">プロジェクト一覧</a><a href="{{ site.organization_url }}/raichomichi.github.io/tree/main/shinshu-tech-links">GitHub</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
