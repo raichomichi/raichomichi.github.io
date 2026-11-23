@@ -55,10 +55,10 @@ bundle exec jekyll serve
 
 ### アクセス解析を設定する
 
-[_config.yml](_config.yml) で、このサイト用の ID を設定します。初期状態は両方とも空欄です。計測タグは本番ビルド（`JEKYLL_ENV=production`）でのみ読み込みます。
+このサイトは [_config.yml](_config.yml) の `google_tag_manager_id` で GTM コンテナを指定しています。計測タグは本番ビルド（`JEKYLL_ENV=production`）でのみ読み込みます。
 
 - **Google タグ マネージャー経由** — `google_tag_manager_id` に `GTM-…` を指定します。タグマネージャー側でこのサイトの GA4 測定 ID を使う Google タグを全ページで配信するよう設定し、コンテナを公開します。
-- **GA4 を直接使う場合** — `google_tag_manager_id` は空欄のまま、`google_analytics_id` に測定 ID（`G-…`）を指定します。両方を指定した場合はタグマネージャーが優先されます。
+- **GA4 を直接使う場合** — `google_tag_manager_id` を空欄にし、`google_analytics_id` に測定 ID（`G-…`）を指定します。両方を指定した場合はタグマネージャーが優先されます。
 
 計測目的や配信するタグを変更する際は、[プライバシーポリシー](privacy.md) の記載も確認してください。
 

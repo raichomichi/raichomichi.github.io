@@ -17,14 +17,22 @@ permalink: /privacy/
 {% assign gtm_id = site.google_tag_manager_id | strip %}
 {% assign ga4_id = site.google_analytics_id | strip %}
 {% if jekyll.environment == 'production' and gtm_id != empty %}
-このサイトは Google タグ マネージャーを読み込み、計測タグを管理しています。コンテナで Google アナリティクス 4（GA4）が有効な場合、以下のアクセス解析を行います。
+このサイトは Google タグ マネージャー（GTM）で計測タグを管理しています。GTM から Google アナリティクス 4（GA4）のタグを配信すると、以下のアクセス解析が始まります。
 {% elsif jekyll.environment == 'production' and ga4_id != empty %}
-このサイトは Google アナリティクス 4（GA4）を使い、以下のアクセス解析を行っています。
+このサイトは Google アナリティクス 4（GA4）でアクセスを解析しています。
 {% else %}
 現在、このサイトでは Google アナリティクス 4（GA4）と Google タグ マネージャーのタグを読み込んでいません。
 {% endif %}
 
-アクセス解析の目的は、よく読まれている地域ガイドや訪問者が使う端末を把握し、記事やナビゲーションを改善することです。GA4 を使用する場合、閲覧したページの URL、参照元、端末・ブラウザーの情報、操作に関するデータなどが Google に送信されます。訪問の識別には Cookie が使われることがあります。[Google によるデータの取り扱い](https://policies.google.com/technologies/partner-sites?hl=ja)
+### 収集する情報と利用目的
+
+GA4 の計測時には、ブラウザーから Google LLC に、閲覧したページの URL、参照元、端末やブラウザーの種類、ページ上の操作に関する情報が送信されます。GA4 は同じブラウザーからの再訪問を識別するために、このサイトの Cookie に保存した識別子を利用することがあります。運営者は集計結果から、よく読まれる地域ガイドや利用の多い端末を把握し、記事の内容やサイト内の案内を改善します。
+
+Google アナリティクス利用規約は、氏名やメールアドレスなど、Google が個人を特定できる情報を運営者が GA4 に送信することを原則として禁じています。[Google アナリティクス利用規約（第7条「プライバシー」）](https://marketingplatform.google.com/about/analytics/terms/jp/)
+
+Google が受け取った情報をどのように使用するかは、次の説明をご覧ください。[Google によるサイトやアプリから収集した情報の使用](https://policies.google.com/technologies/partner-sites?hl=ja)・[Google プライバシーポリシー](https://policies.google.com/privacy?hl=ja)
+
+### Cookie の管理と計測の停止
 
 Cookie の保存や削除はブラウザーの設定で管理できます。対応ブラウザーでは、Google が提供するアドオンで GA4 へのデータ送信を停止できます。[Google アナリティクス オプトアウト アドオン](https://tools.google.com/dlpage/gaoptout?hl=ja)
 
