@@ -6,8 +6,8 @@
 
 このJekyllサイトでは、地域の勉強会や交流会を探せる「信州のIT・デザインイベントとコミュニティ」を編集・公開しています。地域のイベント情報、共同制作のお誘い、仕事のご相談は運営者の個人サイトへどうぞ。
 
-- [公開サイト「雷鳥の道」](https://raichomichi.github.io/)
-- [GitHub Organization](https://github.com/raichomichi)
+- [公開サイト「雷鳥の道」](https://raichonomichi.net/)
+- [GitHub Organization](https://github.com/raichonomichi)
 - [運営者 ytsuyuzaki・お問い合わせ](https://muchuu.net/)
 
 ## 手元で表示する
@@ -28,7 +28,7 @@ bundle exec jekyll serve
 | --- | --- | --- |
 | トップ | [index.html](index.html) | 紹介文、挿絵、活動のアイデア |
 | プロジェクト一覧 | [_data/projects.yml](_data/projects.yml) | 公開した制作物。案内文と表示形式は [projects.html](projects.html) で編集 |
-| [信州のIT・デザインイベントとコミュニティ](https://raichomichi.github.io/shinshu-tech-links/) | [リンク集のページ](shinshu-tech-links/index.html)・[掲載データ](_data/shinshu_tech_links/communities.yml) | 地域別の団体・告知元、最終更新日 |
+| [信州のIT・デザインイベントとコミュニティ](https://raichonomichi.net/shinshu-tech-links/) | [リンク集のページ](shinshu-tech-links/index.html)・[掲載データ](_data/shinshu_tech_links/communities.yml) | 地域別の団体・告知元、最終更新日 |
 | この活動について | [about.md](about.md) | 活動の目的・地域、名前の由来、運営と参加について |
 
 共通のナビゲーションと連絡先URLは [_config.yml](_config.yml)、ヘッダーとフッターは [_layouts/default.html](_layouts/default.html)、配色やレイアウトは [assets/css/site.css](assets/css/site.css) で編集します。`_config.yml` を変更したときはプレビューを再起動してください。
@@ -41,7 +41,7 @@ bundle exec jekyll serve
 - name: "作品名"
   description: "誰が何に使える作品かを一文で紹介します。"
   site_url: "/example/"
-  repo_url: "https://github.com/raichomichi/raichomichi.github.io/tree/main/example"
+  repo_url: "https://github.com/raichonomichi/raichonomichi.net/tree/main/example"
 ```
 
 `site_url`（公開サイト）と `repo_url`（ソースコード）は、どちらか一方だけでも掲載できます。使わない方は行ごと省略してください。最初の作品を登録すると初回案内が一覧に切り替わり、`[]` に戻すと再び案内が表示されます。
@@ -57,7 +57,7 @@ bundle exec jekyll serve
 
 1. `bundle exec jekyll build` でビルドし、プレビューでトップ・イベントとコミュニティ・プロジェクト一覧・活動紹介を確認します。
 2. ソースと作品データの変更を `main` に反映します。GitHub Pagesは `main` のルート（`/`）からサイトをビルドして公開します。`_site/` はローカルの生成先です。
-3. [GitHub Actions](https://github.com/raichomichi/raichomichi.github.io/actions) でPagesのデプロイ完了を確認し、[公開サイト](https://raichomichi.github.io/) で表示とリンクを確認します。
+3. [GitHub Actions](https://github.com/raichonomichi/raichonomichi.net/actions) でPagesのデプロイ完了を確認し、[公開サイト](https://raichonomichi.net/) で表示とリンクを確認します。
 
 <details>
 <summary>トップページの挿絵</summary>
