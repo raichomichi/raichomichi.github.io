@@ -1,4 +1,4 @@
-# 雷鳥の道（raichomichi）
+# 雷鳥の道（raichonomichi）
 
 **北アルプスから、つくる・試す・つながる。**
 
@@ -9,6 +9,7 @@
 - [公開サイト「雷鳥の道」](https://raichonomichi.net/)
 - [GitHub Organization](https://github.com/raichonomichi)
 - [運営者 ytsuyuzaki・お問い合わせ](https://muchuu.net/)
+- [運営者のX（@yytsuyuzaki）](https://x.com/yytsuyuzaki)
 
 ## 手元で表示する
 

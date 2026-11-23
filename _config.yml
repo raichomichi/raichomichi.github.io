@@ -1,4 +1,5 @@
 title: 雷鳥の道
+project_name: raichonomichi
 description: 長野県の北アルプス地域と安曇野市・松本市・塩尻市を舞台に、Webやデジタル技術を使って作り、試し、公開する個人プロジェクトです。
 lang: ja
 timezone: Asia/Tokyo
@@ -7,6 +8,7 @@ baseurl: ""
 theme: null
 organization_url: https://github.com/raichonomichi
 operator_url: https://muchuu.net/
+operator_x_url: https://x.com/yytsuyuzaki
 contact_url: https://muchuu.net/contact/
 
 google_tag_manager_id: "GTM-T46FXF4K"
