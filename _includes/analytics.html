@@ -1,0 +1,15 @@
+{% if gtm_id != empty %}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({'gtm.start': Date.now(), event: 'gtm.js'});
+  </script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id={{ gtm_id | url_encode }}"></script>
+{% elsif ga4_id != empty %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga4_id | url_encode }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', {{ ga4_id | jsonify }});
+  </script>
+{% endif %}

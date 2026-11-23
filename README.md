@@ -28,7 +28,7 @@ bundle exec jekyll serve
 | --- | --- | --- |
 | トップ | [index.html](index.html) | 紹介文、挿絵、活動のアイデア |
 | プロジェクト一覧 | [_data/projects.yml](_data/projects.yml) | 公開した制作物。案内文と表示形式は [projects.html](projects.html) で編集 |
-| [信州のIT・デザインイベントとコミュニティ](https://raichonomichi.net/shinshu-tech-links/) | [リンク集のページ](shinshu-tech-links/index.html)・[掲載データ](_data/shinshu_tech_links/communities.yml) | 地域別の団体・告知元、最終更新日 |
+| [信州のIT・デザインイベントとコミュニティ](https://raichonomichi.net/guides/shinshu-tech-links/) | [リンク集のページ](shinshu-tech-links/index.html)・[掲載データ](_data/shinshu_tech_links/communities.yml) | 地域別の団体・告知元、最終更新日 |
 | この活動について | [about.md](about.md) | 活動の目的・地域、名前の由来、運営と参加について |
 
 共通のナビゲーションと連絡先URLは [_config.yml](_config.yml)、ヘッダーとフッターは [_layouts/default.html](_layouts/default.html)、配色やレイアウトは [assets/css/site.css](assets/css/site.css) で編集します。`_config.yml` を変更したときはプレビューを再起動してください。
@@ -51,7 +51,16 @@ bundle exec jekyll serve
 - 団体・イベントシリーズ・講座の告知元は [communities.yml](_data/shinshu_tech_links/communities.yml) に追加します。地域区分は北アルプス地域（`alps`）、安曇野・松本・塩尻（`chushin`）、信州各地（`shinshu`）です。分野は IT・Web・デザイン・生成AI から選びます。複数の市町村で活動する団体は1件にまとめます。
 - 各回の日程は、主催者の公式サイトや外部カレンダーへのリンクで案内します。
 - 各項目の `checked_on` には公式告知を確認した日を記入します。本文の編集、掲載内容の修正や削除時には [リンク集のページ](shinshu-tech-links/index.html) 冒頭の `updated_on` を更新します。タイトル下の「最終更新日」には、これらのうち最も新しい日が表示されます。
-- [ローカルのリンク集](http://127.0.0.1:4000/shinshu-tech-links/) で日付、地域への移動、分野別の絞り込み、公式リンクを確認します。
+- [ローカルのリンク集](http://127.0.0.1:4000/guides/shinshu-tech-links/) で日付、地域への移動、分野別の絞り込み、公式リンクを確認します。
+
+### アクセス解析を設定する
+
+[_config.yml](_config.yml) で、このサイト用の ID を設定します。初期状態は両方とも空欄です。計測タグは本番ビルド（`JEKYLL_ENV=production`）でのみ読み込みます。
+
+- **Google タグ マネージャー経由** — `google_tag_manager_id` に `GTM-…` を指定します。タグマネージャー側でこのサイトの GA4 測定 ID を使う Google タグを全ページで配信するよう設定し、コンテナを公開します。
+- **GA4 を直接使う場合** — `google_tag_manager_id` は空欄のまま、`google_analytics_id` に測定 ID（`G-…`）を指定します。両方を指定した場合はタグマネージャーが優先されます。
+
+計測目的や配信するタグを変更する際は、[プライバシーポリシー](privacy.md) の記載も確認してください。
 
 ## 公開する
 

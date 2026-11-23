@@ -2,7 +2,8 @@
 layout: regional-guide
 title: 地域の公開データと歴史資料
 description: 松本城から旧開智学校までの文化財散策地図を掲載。北アルプス地域と安曇野・松本・塩尻で、地図やクイズに使える公開データと歴史資料を紹介します。
-permalink: /local-sources/
+permalink: /guides/local-sources/
+redirect_from: /local-sources/
 stylesheet: /assets/css/regional-guides.css
 lead: 歩いて行ける文化財を地図に載せるなら、まず場所が分かるデータを。湧き水にまつわるクイズを作るなら、土地に残る昔話を。企画の出発点になる資料と、それぞれの使い道を紹介します。
 guide_order: 2

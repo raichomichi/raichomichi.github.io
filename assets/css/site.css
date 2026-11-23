@@ -68,17 +68,6 @@ a:hover { color: #587242; }
 .mountain-mark {
   width: 2.25rem;
   height: 2.25rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--pine);
-}
-.mountain-mark::before {
-  content: "";
-  width: 1.65rem;
-  height: .95rem;
-  background: white;
-  clip-path: polygon(0 90%, 30% 24%, 47% 55%, 72% 0, 100% 90%, 72% 34%, 48% 87%, 30% 52%, 12% 90%);
 }
 .main-nav, .site-footer nav {
   display: flex;
@@ -150,6 +139,11 @@ a:hover { color: #587242; }
 .field-copy { max-width: 44rem; }
 .field-copy p + p, .field-copy a { margin-top: .8rem; }
 .field-copy a { display: inline-block; }
+
+.profile-heading { display: flex; align-items: center; gap: 1rem; align-self: start; }
+.profile-heading img { width: 5rem; height: 5rem; border-radius: 50%; }
+.profile-heading h2 { font-size: clamp(1.35rem, 2.5vw, 2rem); }
+.profile-heading p { color: var(--moss); font-size: .9rem; }
 
 .home-guide-groups { display: grid; gap: 1.6rem; }
 .home-guide-groups h3 {

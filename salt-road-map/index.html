@@ -2,7 +2,8 @@
 layout: article
 title: 地図でたどる塩の道
 description: 糸魚川から松本まで千国街道の主な経由地をたどり、成相新田宿、栂池高原の宿、大町の塩問屋の場所と案内を探せます。
-permalink: /salt-road-map/
+permalink: /guides/salt-road-map/
+redirect_from: /salt-road-map/
 guide_order: 5
 guide_category: 出かける・歩く
 stylesheet: /salt-road-map/map.css
@@ -40,6 +41,6 @@ script: /salt-road-map/leaflet-1.9.4/leaflet.js
 <h2>街道全体と地図の出典</h2>
 <p>この地図には、糸魚川から山口・大網を通る筋と、池田の十日市場から高瀬川を渡って安曇追分へ向かう筋、豊科から熊倉を経て松本へ入る筋を載せました。高瀬川の目印は現在の高瀬橋付近です。時代や荷の行き先によって、ほかの枝道も使われました。<a href="https://www.hrr.mlit.go.jp/matumoto/1.2.pdf#page=2">国土交通省の千国街道全図（図1.2、PDF）</a>・<a href="https://www.itoigawa-kanko.net/spot/shionomichi_museum/">糸魚川市観光協会の街道案内</a>・<a href="https://thejapanalps.com/activities/shionomichi/course-7/">日本アルプスガイドセンターの湖畔区間図</a>・<a href="https://www.city.matsumoto.nagano.jp/uploaded/attachment/70251.pdf">松本市の仁科街道資料（PDF）</a></p>
 <p>峠と池の位置は<a href="https://github.com/gsi-cyberjapan/experimental_anno">国土地理院の地図情報（注記）</a>で照合しました。集落の代表位置の一部は<a href="https://doi.org/10.20676/00000448">『日本歴史地名大系』地名項目データセット（CODH作成）</a>を丸めて使用しました。<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
-<p><a href="{{ '/raicho-and-salt-road/' | relative_url }}">雷鳥の暮らしと塩の道の歴史を読む</a></p>
+<p><a href="{{ '/guides/raicho-and-salt-road/' | relative_url }}">雷鳥の暮らしと塩の道の歴史を読む</a></p>
 <script id="road-points" type="application/json">{{ road.route | jsonify }}</script>
 <script src="{{ '/salt-road-map/map.js' | relative_url }}" defer></script>

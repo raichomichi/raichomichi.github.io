@@ -2,7 +2,8 @@
 layout: regional-guide
 title: 雷鳥と塩の道
 description: 北アルプスの雷鳥の暮らしと観察先、糸魚川から松本を結んだ千国街道の牛方宿や塩にまつわる伝承を紹介します。
-permalink: /raicho-and-salt-road/
+permalink: /guides/raicho-and-salt-road/
+redirect_from: /raicho-and-salt-road/
 stylesheet: /assets/css/regional-guides.css
 lead: 乗鞍岳では、季節とともに羽の色が変わる雷鳥が暮らしています。山麓の千国街道には、塩を運んだ人と牛が休んだ宿が残っています。
 guide_order: 4
@@ -39,7 +40,7 @@ guide_category: 自然・歴史を知る
 
 荷を牛に載せて引く人が**牛方（うしかた）**、自分の背に負う人が**歩荷（ぼっか）**です。荒れる姫川を避け、荷は山腹や峠を越えました。降り積もった雪で牛が通れなくなる季節も、歩荷が街道をつなぎました。
 
-[地図で糸魚川から松本までの塩の道と宿・見どころをたどる]({{ '/salt-road-map/' | relative_url }})
+[地図で糸魚川から松本までの塩の道と宿・見どころをたどる]({{ '/guides/salt-road-map/' | relative_url }})
 
 ### 小谷の千国越えでたどる二つの宿
 

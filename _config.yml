@@ -6,7 +6,14 @@ url: https://raichonomichi.net
 baseurl: ""
 theme: null
 organization_url: https://github.com/raichonomichi
-contact_url: https://muchuu.net/
+operator_url: https://muchuu.net/
+contact_url: https://muchuu.net/contact/
+
+google_tag_manager_id: ""
+google_analytics_id: ""
+
+plugins:
+  - jekyll-redirect-from
 
 guide_group_order: [働く・つながる, 出かける・歩く, 自然・歴史を知る]
 

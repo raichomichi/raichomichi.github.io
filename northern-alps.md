@@ -2,7 +2,8 @@
 layout: regional-guide
 title: 北アルプスの山々と名前の由来
 description: 安曇野から見える常念岳を手がかりに、北アルプスの名前の由来、四つの山・連峰、燕岳の山小屋を紹介します。
-permalink: /northern-alps/
+permalink: /guides/northern-alps/
+redirect_from: /northern-alps/
 guide_order: 6
 guide_category: 自然・歴史を知る
 stylesheet: /assets/css/regional-guides.css
