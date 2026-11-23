@@ -12,6 +12,7 @@
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/mountain-mark.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
     {% if page.stylesheet %}<link rel="stylesheet" href="{{ page.stylesheet | relative_url }}">{% endif %}
+    <script defer src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
     {% if page.script %}<script defer src="{{ page.script | relative_url }}"></script>{% endif %}
   </head>
   <body>
@@ -25,7 +26,10 @@
           <img class="mountain-mark" src="{{ '/assets/images/mountain-mark.svg' | relative_url }}" width="36" height="36" alt="">
           {{ site.title }}
         </a>
-        <nav class="main-nav" aria-label="メインナビゲーション">
+        <button class="menu-toggle" type="button" aria-label="メニュー" aria-expanded="false" aria-controls="main-nav" hidden>
+          <span class="menu-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション">
           {% for item in site.navigation %}
             <a href="{{ item.path | relative_url }}"{% if page.url == item.path %} aria-current="page"{% endif %}>{{ item.title }}</a>
           {% endfor %}
