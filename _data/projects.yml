@@ -1,1 +1,4 @@
-[]
+- name: "松本市オープンデータ活用サイト"
+  description: "松本市オープンデータを活用した1ページ完結のミニサービスと、整形済みデータセット（静的 JSON API）を公開するサイトです。"
+  site_url: "https://modata.raichonomichi.net/"
+  repo_url: "https://github.com/raichonomichi/matsumoto-opendata"
