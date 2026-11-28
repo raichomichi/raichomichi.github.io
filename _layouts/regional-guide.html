@@ -15,4 +15,5 @@ layout: default
     {% endif %}
   </header>
   {{ content }}
+  {% if page.guide_order %}{% include guide-consultation.html %}{% endif %}
 </article>

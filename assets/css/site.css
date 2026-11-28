@@ -188,6 +188,20 @@ a:hover { color: #587242; }
 .project-list li + li { padding-top: 1.5rem; }
 .project-list p, .project-links { margin-top: .65rem; }
 
+.guide-consultation {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+  color: var(--moss);
+  font-size: .9rem;
+}
+.guide-consultation-band { padding-block: 1.25rem; }
+.guide-consultation-band .guide-consultation {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .site-footer { border-top: 1px solid var(--line); }
 .footer-inner { padding-block: 2rem; }
 .site-footer p { font-size: .88rem; color: var(--moss); }
